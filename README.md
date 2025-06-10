@@ -5,5 +5,5 @@ Python 项目模板。单元测试使用 pytest。源代码和测试代码分开
 # 克隆基础项目代码
 获取文件，不获取`.git`目录。
 ```shell
-git clone --depth 1 https://github.com/user/repo.git
+git clone -b master --depth 1 https://github.com/linhaiguanchao7/python-project-template.git
 ```
