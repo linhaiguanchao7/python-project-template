@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "example_package_YOUR_USERNAME_HERE"
+version = "0.1.0"
+authors = [
+  { name="Example Author", email="author@example.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+dependencies = [
+]
+
+[project.urls]
+Homepage = "https://github.com/linhaiguanchao7/python-project-template"
+Issues = "https://github.com/linhaiguanchao7/python-project-template/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/package"]
+
+[tool.pytest.ini_options]
+log_cli = 1
+log_cli_level = "DEBUG"
+log_cli_format = "%(filename)s:%(lineno)s %(asctime)s %(levelname)s： %(message)s"
+log_cli_date_format="%Y-%m-%d %H:%M:%S"
+testpaths = ["tests"]
+pythonpath = ["src"]
