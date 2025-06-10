@@ -13,7 +13,7 @@ git clone -b master --depth 1 https://github.com/linhaiguanchao7/python-project-
 ```
 
 + 获取 python-package-template
-+ 
-+ ```shell
+
+```shell
 git clone -b Package --depth 1 https://github.com/linhaiguanchao7/python-project-template.git
 ```
